@@ -57,6 +57,7 @@ $(document).ready(function() {
 
 // Results
     $(".suggestedtrack").show();
+    $(".apply").show();
     $("#name").text(userName)
     if (csharp > ruby+design) {
       $(".result").hide();
@@ -68,5 +69,8 @@ $(document).ready(function() {
       $(".result").hide();
       $("#design").show();
     }
+    $(".apply").show();
+// apply button
   });
+
 });

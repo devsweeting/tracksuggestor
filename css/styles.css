@@ -8,9 +8,9 @@
   margin-bottom: 20px;
 }
 
-/* .suggestedtrack{
+.suggestedtrack, .apply{
   display: none;
-} */
+}
 
 .result {
   display: none;
@@ -25,18 +25,15 @@
   background-color: #b1d7ed;
 }
 
-
+#name {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+}
  .tracks {
    background-color: #bababa;
    font-size: 20px;
  }
-
- .tracks #name {
-   font-size: 30px;
-   font-weight: bold;
-   text-decoration: underline;
- }
-
 .csharplogo, .rubylogo, .csslogo {
   display: block;
   margin: 40px;
