@@ -68,6 +68,5 @@ $(document).ready(function() {
       $(".result").hide();
       $("#design").show();
     }
-// apply button
   });
 });

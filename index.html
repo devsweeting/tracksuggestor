@@ -14,16 +14,18 @@
         <h2>Which Track Is For You?</h2>
       </div>
       <div class="container">
+        <p>Think of learning a programming language as future-proofing your career. You don’t have to worry about the machines putting you out of a job if you’re the person powering the machines. With all of this opportunity before you, how can you decide which programming language offers the greatest upside for Future you?</p>
+        <h3>Find out below:</h3>
           <form class="input-group userInfo">
             <div class="form-group">
-              <p class="info">What's your name?</p>
+              <p class="info">Please enter your name?</p>
               <input id="userName" type="text" class="form-control" ></input>
             </div>
 
           </form>
           <form id="tracks">
         <!-- workplace -->
-          <div class="well">
+          <div class="well questions">
             <div class="workplace">
               <h4>Would you rather work for a large corporation like Google or Facebook, or an emerging start up?</h4>
               <label>
@@ -45,9 +47,9 @@
             </div>
           </div>
           <!--  Sandwich -->
-          <div class="well">
+          <div class="well questions">
             <div class="sandwich">
-              <h4>What's Your favorite kind of sandwich</h4>
+              <h4>What is your favorite kind of sandwich?</h4>
               <label>
                 <input type="radio" name="sandwich-type" value="toast" checked>
                 Plain Toast
@@ -62,12 +64,12 @@
             <div class="sandwich">
               <label>
                 <input type="radio" name="sandwich-type" value="home">
-                I make it the best at home.
+                The kind made from perfection at home.
               </label>
             </div>
           </div>
           <!-- Freetime -->
-          <div class="well">
+          <div class="well questions">
             <div class="freetime">
               <h4>What do you do in your free time?</h4>
               <label>
@@ -89,7 +91,7 @@
             </div>
           </div>
           <!-- Salary -->
-          <div class="well">
+          <div class="well questions">
             <div class="salary">
               <h4>What is your desired salary?</h4>
               <label>
@@ -111,7 +113,7 @@
             </div>
           </div>
           <!-- Interest -->
-          <div class="well">
+          <div class="well questions">
             <div class="interest">
               <h4>What is is that made you interested in programming?</h4>
               <label>
@@ -132,11 +134,9 @@
               </label>
             </div>
           </div>
-
           <button type="submit" class="btn btn-success">See suggested track</button>
-
         </form>
-        <div class="suggestedtrack">
+        <div id="suggestedtrack">
 
           <span class="result" id="csharp"><span id="name"></span> your track is <strong>C#/.NET</strong>!<p> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p></span>
 
