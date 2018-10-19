@@ -4,6 +4,10 @@
   align-content:center;
 }
 
+.userInfo {
+  margin-bottom: 20px;
+}
+
 .suggestedtrack{
   display: none;
   margin-top: 20px;

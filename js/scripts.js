@@ -47,16 +47,17 @@ $(document).ready(function() {
       design += 1;
     }
 // Interest
-        if (interestInput === "employment") {
-          csharp += 1;
-        } else if (interestInput === "income") {
-          ruby += 1;
-        } else if (interestInput === "onlineart") {
-          design += 1;
-        }
+    if (interestInput === "employment") {
+      csharp += 1;
+    } else if (interestInput === "income") {
+      ruby += 1;
+    } else if (interestInput === "onlineart") {
+      design += 1;
+    }
 
 // Results
     $(".suggestedtrack").show();
+    $("#name").text(userName)
     if (csharp > ruby+design) {
       $(".result").hide();
       $("#csharp").show()
@@ -67,7 +68,6 @@ $(document).ready(function() {
       $(".result").hide();
       $("#design").show();
     }
+// apply button
   });
-
-  // $(".suggestedtrack").fadeOut(1);
 });
