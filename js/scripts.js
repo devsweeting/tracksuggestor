@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     var csharp = 0;
     var ruby= 0;
-    var design = 0;
+    var design = 2;
 // workplace
     if (workplaceInput === "Corporation") {
       csharp += 1;
@@ -56,20 +56,24 @@ $(document).ready(function() {
     }
 
 // Results
-    $(".suggestedtrack").show();
-    $(".apply").show();
-    $("#name").text(userName)
+    $("#suggestedtrack").fadeIn(500);
+    $("#suggestedtrack").show();
     if (csharp > ruby+design) {
+      $("#name").text(userName)
       $(".result").hide();
-      $("#csharp").show()
+      $("#csharp").fadeIn(500)
     } else if (ruby> csharp+design) {
+      $("#name").text(userName)
       $(".result").hide();
-      $("#ruby").show();
+      $("#ruby").fadeIn(500);
     } else if (design > csharp+ruby) {
+      $("#name").text(userName)
       $(".result").hide();
-      $("#design").show();
+      $("#design").fadeIn(500);
     }
     $(".apply").show();
+    // $("#name").text(userName)
+
 // apply button
   });
 
