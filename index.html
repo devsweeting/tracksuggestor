@@ -6,33 +6,83 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Track Suggestor</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Which Track Is For You?</h1>
+        <h2>Which Track Is For You?</h2>
       </div>
-      <!-- Questions -->
-      <form class"choices">
-        <div class="form-group">
-          <label for="Worksize"><h3>Would you rather work for a large corporation like Google or Facebook, or an emerging start up?</h3></label>
-          <select class="form-control" id="worksize">
-            <option value="1" class="csharp">Corporation</option>
-            <option value="2" class="ruby">Start up</option>
-            <option value="3" class="design">Creative Agency</option>
-          </select>
+      <div class="container">
+        <form id="tracks">
+          <div class="workplace">
+            <h4>Would you rather work for a large corporation like Google or Facebook, or an emerging start up?</h4>
+            <label>
+              <input type="radio" name="workplace-type" value="Corporation" checked>
+               Corporation
+            </label>
+          </div>
+          <div class="workplace">
+            <label>
+              <input type="radio" name="workplace-type" value="Start-up">
+              Start-up
+            </label>
+          </div>
+          <div class="workplace">
+            <label>
+              <input type="radio" name="workplace-type" value="CreativeAgency">
+              Creative Agency
+             </label>
+          </div>
+          <!--  - - - - - - - - - - - - - - - - - - - - - - animal stuff-->
+          <div class="sandwich">
+            <h4>What's Your favorite kind of sandwich</h4>
+            <label>
+              <input type="radio" name="sandwich-type" value="toast" checked>
+              Plain Toast
+            </label>
+          </div>
+          <div class="sandwich">
+            <label>
+              <input type="radio" name="sandwich-type" value="artisan">
+              Artisan deli sandwich
+            </label>
+          </div>
+          <div class="sandwich">
+            <label>
+              <input type="radio" name="sandwich-type" value="home">
+              I make it the best at home.
+            </label>
+          </div>
+          <!--  - - - - - - - - - - - - - - - - - - - - - - freetime-->
+          <div class="freetime">
+            <h4>What do you do in your free time?</h4>
+            <label>
+              <input type="radio" name="freetime-type" value="netflix" checked>
+              Stay at home and watch Netflix
+            </label>
+          </div>
+          <div class="freetime">
+            <label>
+              <input type="radio" name="freetime-type" value="adventure">
+              Go on adventures
+            </label>
+          </div>
+          <div class="freetime">
+            <label>
+              <input type="radio" name="freetime-type" value="art">
+              Do art.
+            </label>
+          </div>
+
+          <button type="submit" class="btn">Match Me!</button>
+
+        </form>
+        <div class="result-area">
+          <span class="result" id="csharp">Your track is C#!</span>
+          <span class="result" id="ruby">Your track is Ruby!</span>
+          <span class="result" id="design">Your track is Design!</span>
         </div>
-      </form>
-
-        <button type="submit" class="testingButton" >See Your Track!</button>
-    </div>
-
-<!-- Results -->
-    <div class="result-area">
-      <span class="result" id="ruby">Your track is Ruby!</span>
-      <span class="result" id="csharp">Your track is C#!</span>
-    </div>
-
+      </div>
   </body>
 </html>

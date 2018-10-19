@@ -1,3 +1,7 @@
-#ruby, #Csharp {
+.result-area {
+  display: none;
+}
+
+.result {
   display: none;
 }
