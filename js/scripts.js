@@ -12,12 +12,12 @@ $(document).ready(function() {
 
     var csharp = 0;
     var ruby= 0;
-    var design = 2;
+    var design = 0;
 // workplace
     if (workplaceInput === "Corporation") {
       csharp += 1;
     } else if (workplaceInput === 'Start-up') {
-      ruby+= 1;
+      ruby += 1;
     } else if (workplaceInput === 'CreativeAgency') {
       design+= 1;
     }
@@ -71,10 +71,6 @@ $(document).ready(function() {
       $(".result").hide();
       $("#design").fadeIn(500);
     }
-    $(".apply").show();
-    // $("#name").text(userName)
-
-// apply button
   });
 
 });
