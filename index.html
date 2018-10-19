@@ -14,6 +14,14 @@
         <h2>Which Track Is For You?</h2>
       </div>
       <div class="container">
+          <form class="input-group userInfo">
+            <div class="form-group">
+              <p class="info">What's your name?</p>
+              <input id="userName" type="text" class="form-control" ></input>
+            </div>
+
+          </form>
+        <!-- workplace -->
         <form id="tracks">
           <div class="workplace">
             <h4>Would you rather work for a large corporation like Google or Facebook, or an emerging start up?</h4>
@@ -34,7 +42,7 @@
               Creative Agency
              </label>
           </div>
-          <!--  - - - - - - - - - - - - - - - - - - - - - - animal stuff-->
+          <!--  Sandwich -->
           <div class="sandwich">
             <h4>What's Your favorite kind of sandwich</h4>
             <label>
@@ -54,7 +62,7 @@
               I make it the best at home.
             </label>
           </div>
-          <!--  - - - - - - - - - - - - - - - - - - - - - - freetime-->
+          <!-- Freetime -->
           <div class="freetime">
             <h4>What do you do in your free time?</h4>
             <label>
@@ -75,13 +83,16 @@
             </label>
           </div>
 
-          <button type="submit" class="btn">Match Me!</button>
+          <button type="submit" class="btn btn-success">See suggested track</button>
 
         </form>
-        <div class="result-area">
-          <span class="result" id="csharp">Your track is C#!</span>
-          <span class="result" id="ruby">Your track is Ruby!</span>
-          <span class="result" id="design">Your track is Design!</span>
+        <div class="suggestedtrack">
+
+          <span class="result" id="csharp">Your track is <strong>C#!</strong><p> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p></span>
+
+          <span class="result" id="ruby">Your track is <strong>Ruby!</strong><p> Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p></span>
+
+          <span class="result" id="design">Your track is <strong>Design!</strong><p> Front-end developers spend their time making things look and work well, obsessing over layouts, navigation, colors, and design. If this type of work appeals to you, your best bet is to take CSS and Design classes at Epicodus.</p></span>
         </div>
       </div>
   </body>

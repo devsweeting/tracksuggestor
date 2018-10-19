@@ -1,5 +1,10 @@
-.result-area {
+.jumbotron {
+  background-color: #4485aa
+}
+
+.suggestedtrack{
   display: none;
+  margin-top: 20px;
 }
 
 .result {
