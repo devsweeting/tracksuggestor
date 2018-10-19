@@ -9,6 +9,30 @@
     <title></title>
   </head>
   <body>
-    
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Which Track Is For You?</h1>
+      </div>
+      <!-- Questions -->
+      <form class"choices">
+        <div class="form-group">
+          <label for="Worksize"><h3>Would you rather work for a large corporation like Google or Facebook, or an emerging start up?</h3></label>
+          <select class="form-control" id="worksize">
+            <option value="1" class="csharp">Corporation</option>
+            <option value="2" class="ruby">Start up</option>
+            <option value="3" class="design">Creative Agency</option>
+          </select>
+        </div>
+      </form>
+
+        <button type="submit" class="testingButton" >See Your Track!</button>
+    </div>
+
+<!-- Results -->
+    <div class="result-area">
+      <span class="result" id="ruby">Your track is Ruby!</span>
+      <span class="result" id="csharp">Your track is C#!</span>
+    </div>
+
   </body>
 </html>
