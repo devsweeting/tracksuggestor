@@ -1,5 +1,7 @@
 .jumbotron {
-  background-color: #4485aa
+  color: white;
+  background-image: url(http://finnperkins.lab.uic.edu/images/software.jpg);
+  align-content:center;
 }
 
 .suggestedtrack{
